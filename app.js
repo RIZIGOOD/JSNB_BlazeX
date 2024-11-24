@@ -56,7 +56,7 @@ function showTerminal(callback) {
 
 // Функція для рандомного рішення: "Дозволено" або "Відмовлено"
 function decideAccess() {
-  const result = Math.random() > 0.5; // Результат: true = "Дозволено", false = "Відмовлено"
+  const result = Math.random() > 0.2; // 80% шанс успіху, 20% невдачі
   const messages = {
     allowed: [
       "ДОСТУП ДОЗВОЛЕНО!",
@@ -73,6 +73,24 @@ function decideAccess() {
   const randomMessage = result
     ? messages.allowed[Math.floor(Math.random() * messages.allowed.length)]
     : messages.denied[Math.floor(Math.random() * messages.denied.length)];
+
+  // Вивід результату
+  typeTextWithRGB(`\n> ${randomMessage}\n`, () => {
+    if (result) {
+      setTimeout(() => {
+        typeTextWithRGB("\n>>> ПЕРЕХІД НА OSNOVA...\n", () => {
+          window.location.href = "JSNBosnova.html"; // Перехід на іншу сторінку
+        });
+      }, 2000);
+    } else {
+      typeTextWithRGB("\n>>> Спробуйте ще раз пізніше...\n", () => {
+        setTimeout(() => {
+          window.location.href = "https://www.google.com"; // Перехід на Google
+        }, 2000); // Затримка перед перенаправленням
+      });
+    }
+  });
+}
 
   // Вивід результату
   typeTextWithRGB(`\n> ${randomMessage}\n`, () => {
