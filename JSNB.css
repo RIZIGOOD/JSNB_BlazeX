@@ -1,0 +1,134 @@
+/* Загальний стиль */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: radial-gradient(circle, #000000, #121212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #00ff00;
+}
+
+/* Головний контейнер */
+.main-container {
+    text-align: center;
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 2px solid #00ff00;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #00ff00;
+}
+
+/* Заголовок */
+header {
+    margin-bottom: 20px;
+}
+.logo {
+    font-size: 3rem;
+    animation: rgbPulse 3s infinite alternate;
+}
+.subtitle {
+    font-size: 1.2rem;
+    animation: rgbPulse 3s infinite alternate;
+}
+
+/* Основний контент */
+.content h2,
+.content p {
+    animation: rgbPulse 3s infinite alternate;
+}
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Кнопка перемикання мови */
+.language-toggle {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: #000;
+    background-color: #00ff00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.language-toggle:hover {
+    background-color: #aaffaa;
+    color: #121212;
+}
+
+/* Анімація RGB */
+@keyframes rgbPulse {
+    0% {
+        color: #ff0000;
+        text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+    }
+    33% {
+        color: #00ff00;
+        text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+    }
+    66% {
+        color: #0000ff;
+        text-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff;
+    }
+    100% {
+        color: #ff0000;
+        text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+    }
+}
+
+/* Мобільна адаптація */
+@media (max-width: 768px) {
+    /* Зменшуємо розмір заголовка та тексту */
+    .logo {
+        font-size: 2rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    /* Підлаштовуємо контейнер */
+    .main-container {
+        width: 95%;
+        padding: 15px;
+    }
+    /* Зменшуємо кнопку для мобільних */
+    .language-toggle {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+
+/* Таблети */
+@media (max-width: 1024px) {
+    /* Зменшуємо розміри для середніх екранів */
+    .logo {
+        font-size: 2.5rem;
+    }
+    .subtitle {
+        font-size: 1.1rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
