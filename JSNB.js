@@ -15,8 +15,7 @@ languageToggle.addEventListener('click', () => {
             </p>
             <h2>Чому RIZIGOOD?</h2>
             <p>
-                Серед мільярдів ми обрали **RIZIGOOD**. Невинне обличчя, яке приховує геніальність. 
-                Ідеальний посол для нашої секретної місії. Його подорож із JSNB лише починається — але це історія, варта уваги.
+                RIZIGOOD приєднався до нашої команди! Його подорож разом із JSNB лише починається, і ми впевнені, що попереду багато цікавого.
             </p>
             <h2>Що ми робимо?</h2>
             <p>
@@ -36,8 +35,7 @@ languageToggle.addEventListener('click', () => {
             </p>
             <h2>Why RIZIGOOD?</h2>
             <p>
-                Among billions, we chose **RIZIGOOD**. A face of innocence masking brilliance. The perfect ambassador for our covert mission. 
-                His journey with JSNB is only beginning — but it’s a story worth watching closely.
+                RIZIGOOD has joined our team! His journey with JSNB is just beginning, and we're excited for what lies ahead.
             </p>
             <h2>What We Do?</h2>
             <p>
