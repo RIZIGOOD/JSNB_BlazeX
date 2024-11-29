@@ -1,2 +1,2 @@
 # JSNB_RIZIGOOD
-WHY_RIZI?
+WHY_BlazeX?
