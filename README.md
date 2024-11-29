@@ -1,2 +1,2 @@
-# JSNB_RIZIGOOD
+# JSNB_BlazeX
 WHY_BlazeX?
